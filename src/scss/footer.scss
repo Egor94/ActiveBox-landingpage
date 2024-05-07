@@ -1,0 +1,50 @@
+footer {
+    background-color: #2C3154;
+}
+
+.footer_wrap{
+    display: flex;
+    width: 370px;
+    padding: 15px 0;
+    margin: auto;
+    justify-content: center ;
+
+
+}
+.footer_info {
+    
+    color: #808080;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer_name {
+    color: #FFF;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+    .footer_wrap{
+    width: 315px;
+    }
+
+    .footer_info {
+    font-size: 14px;
+    }
+    .footer_name {
+    font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer_wrap{
+        width: 280px;
+        }
+    }    
+

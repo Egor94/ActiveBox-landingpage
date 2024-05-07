@@ -1,0 +1,139 @@
+.people {
+    justify-content: center;
+}
+
+.people_list {
+    padding: 115px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.people_item {
+    display: block;
+    width: 270px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.people_img {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.people_img img{
+    @include std_img;
+
+}
+
+h3 {
+    @include h3;
+
+}
+
+.people_position {
+    display: block;
+    color: #FF4343;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.people_social {
+    display: flex;
+    margin-top: 38px;
+
+}
+.people_social_a{
+    margin-right: 5px;
+  
+
+}
+
+.people_social_icon:hover {
+    @include social_icon;
+}
+
+.people_description {
+    color: #6C7279;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px)  { 
+    .people_item {
+        width:227px;
+    }
+    .people_img {
+        width: 227px;
+        height: 227px;
+       overflow: hidden;
+       
+    }
+    .people_img img {
+
+        @include std_img;
+           
+    }
+    h3 {
+        font-size: 24px;
+    }
+
+    .people_position {
+        font-size: 14px;
+    }
+    .people_description {
+        font-size: 14px;
+    }
+
+    .people_social_a{
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+    }
+
+    .people_social_icon{
+        @include std_img;
+
+    }
+}
+
+@media (max-width: 575px) {
+    .people_list {
+        padding: 35px 0 0 0;
+        margin-bottom: 35px;
+    }
+    .people_item {
+        width:280px;
+        margin: 25px auto;
+    }
+    .people_img {
+        width: 280px;
+        height: 280px;
+       overflow: hidden;
+       
+    }
+    .people_img img {
+
+        @include std_img;
+           
+    }
+
+
+    .people_social_a{
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .people_social_icon{
+        @include std_img;
+
+    }
+
+
+
+}

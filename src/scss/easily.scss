@@ -1,0 +1,70 @@
+.easily_list {
+    padding: 91px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 15px;
+}
+
+.easily_item {
+    display: block;
+    justify-content: center;
+    width: 370px;
+    padding: 25px 0 15px;
+    margin: auto;
+    align-items: center;
+
+
+}
+
+.easily_img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.easily_about_card {
+    color: #2D3033;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 45px 0 20px 0;
+}
+
+.easily_description {
+    display: flex;
+    width: 370px;
+    color: #6C7279;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    align-items:center;
+}
+
+@media (max-width: 1024px)  { 
+
+    .easily_item {
+        width: 300px;
+
+    }
+    .easily_about_card {
+        font-size: 18px;
+    }
+    .easily_description {
+        font-size: 14px;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .easily_list {
+        padding: 25px 0 35px 0;
+    }
+
+}

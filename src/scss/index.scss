@@ -1,0 +1,36 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@import "./cdn";
+@import "./varibales";
+@import "./mixins";
+@import "./header";
+@import "./easily.scss";
+@import "./people.scss";
+@import "./ready.scss";
+@import "./location.scss";
+@import "./footer.scss";
+@import "./grids.scss";
+@import "./slider.scss";
+
+
