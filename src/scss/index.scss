@@ -20,12 +20,12 @@ p {
     margin-bottom: 0;
 }
 
-.arrowUp {
+.arrow_up {
     z-index: 3;
     position: fixed;
     bottom: -50px;
     right: 50px;
-    background-color:#a9a9a963;
+    background-color: #a9a9a963;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -33,7 +33,7 @@ p {
     transform: 0.4 linear;
 }
 
-.arrowUp.active {
+.arrow_up.active {
     bottom: 50px;
     transform: 0.4 linear;
 }
@@ -56,5 +56,3 @@ p {
 @import "./footer.scss";
 @import "./grids.scss";
 @import "./slider.scss";
-
-

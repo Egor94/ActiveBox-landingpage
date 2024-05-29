@@ -2,12 +2,12 @@ footer {
     background-color: #2C3154;
 }
 
-.footer_wrap{
+.footer_wrap {
     display: flex;
     width: 370px;
     padding: 15px 0;
     margin: auto;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .footer_info {
@@ -28,20 +28,21 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .footer_wrap{
-    width: 315px;
+    .footer_wrap {
+        width: 315px;
     }
+
     .footer_info {
-    font-size: 14px;
+        font-size: 14px;
     }
+
     .footer_name {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 575px) {
-    .footer_wrap{
+    .footer_wrap {
         width: 280px;
-        }
-    }    
-
+    }
+}

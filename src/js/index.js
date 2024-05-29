@@ -1,4 +1,4 @@
-import 'bootstrap';
+import "bootstrap";
 
 document.addEventListener("DOMContentLoaded", function () {
     const headerLinks = document.querySelectorAll(".header_link");
@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 )
 
-document.addEventListener('scroll', function () {
+document.addEventListener("scroll", function () {
     let scrollSize = document.documentElement.scrollTop;
-    const upBotton = document.getElementById('arrowUp')
+    const upBotton = document.getElementById("arrowUp")
     if (scrollSize > 300) {
-        upBotton.classList.add('active');
-    } else
-        upBotton.classList.remove('active')
+        upBotton.classList.add("active");
+    } else {
+        upBotton.classList.remove("active")
+    }
 })

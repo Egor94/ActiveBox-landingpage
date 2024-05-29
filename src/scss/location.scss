@@ -43,18 +43,22 @@
     .location_items {
         max-width: 315px;
     }
+
     .location_headers {
         font-size: 14px;
     }
+
     .location_description {
         font-size: 14px;
     }
+
     .location_nav_a {
         width: 33px;
         height: 33px;
         overflow: hidden;
     }
-    .location_social_icon{
+
+    .location_social_icon {
         @include std_img;
     }
 }
@@ -64,10 +68,12 @@
         justify-content: center;
         padding: 35px 0;
     }
+
     .location_items {
         max-width: 315px;
         margin-bottom: 60px;
     }
+
     .location_items_last {
         margin-bottom: 0;
     }

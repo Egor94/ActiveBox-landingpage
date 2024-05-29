@@ -40,17 +40,18 @@
     font-size: 18px;
     font-weight: 400;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-@media (max-width: 1024px)  { 
-
+@media (max-width: 1024px) {
     .easily_item {
         width: 300px;
     }
+
     .easily_about_card {
         font-size: 18px;
     }
+
     .easily_description {
         font-size: 14px;
         width: 300px;

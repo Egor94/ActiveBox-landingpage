@@ -21,7 +21,8 @@
     overflow: hidden;
     margin-bottom: 30px;
 }
-.people_img img{
+
+.people_img img {
     @include std_img;
 }
 
@@ -44,7 +45,7 @@ h3 {
     margin-top: 38px;
 }
 
-.people_social_a{
+.people_social_a {
     margin-right: 5px;
 }
 
@@ -59,33 +60,40 @@ h3 {
     font-weight: 400;
 }
 
-@media (max-width: 1024px)  { 
-    .people_item {
-        width:227px;
-    }
-    .people_img {
-        width: 227px;
-        height: 227px;
-       overflow: hidden;     
-    }
-    .people_img img {
-        @include std_img;          
-    }
+@media (max-width: 1024px) {
     h3 {
         font-size: 24px;
     }
+
+    .people_item {
+        width: 227px;
+    }
+
+    .people_img {
+        width: 227px;
+        height: 227px;
+        overflow: hidden;
+    }
+
+    .people_img img {
+        @include std_img;
+    }
+
     .people_position {
         font-size: 14px;
     }
+
     .people_description {
         font-size: 14px;
     }
-    .people_social_a{
+
+    .people_social_a {
         width: 32px;
         height: 32px;
         overflow: hidden;
     }
-    .people_social_icon{
+
+    .people_social_icon {
         @include std_img;
     }
 }
@@ -95,26 +103,30 @@ h3 {
         padding: 35px 0 0 0;
         margin-bottom: 35px;
     }
+
     .people_item {
-        width:280px;
+        width: 280px;
         margin: 25px auto;
     }
+
     .people_img {
         width: 280px;
         height: 280px;
-       overflow: hidden;       
+        overflow: hidden;
     }
-    .people_img img {
 
+    .people_img img {
         @include std_img;
-           
+
     }
-    .people_social_a{
+
+    .people_social_a {
         width: 40px;
         height: 40px;
         overflow: hidden;
     }
-    .people_social_icon{
+
+    .people_social_icon {
         @include std_img;
     }
 }

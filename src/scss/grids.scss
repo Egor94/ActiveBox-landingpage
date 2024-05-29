@@ -11,9 +11,11 @@
     display: flex;
     position: relative;
     z-index: 1;
+
     &:hover .grid_header {
         display: flex;
     }
+
     &:active .grid_header {
         background-color: #B90C0C;
     }
@@ -28,18 +30,20 @@
 .grid_header {
     @include grid_header;
     display: none;
+
     .grid_h4 {
         @include grid_h4;
     }
+
     .grid_h5 {
         @include grid_h5;
     }
 }
 
 @media (max-width: 575px) {
-.grids {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 25%);
+    .grids {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
 
-}
+    }
 }
