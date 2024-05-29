@@ -6,7 +6,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
 .container {
@@ -19,6 +18,31 @@
 
 p {
     margin-bottom: 0;
+}
+
+.arrowUp {
+    z-index: 3;
+    position: fixed;
+    bottom: -50px;
+    right: 50px;
+    background-color:#a9a9a963;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transform: 0.4 linear;
+}
+
+.arrowUp.active {
+    bottom: 50px;
+    transform: 0.4 linear;
+}
+
+@media (max-width: 690px) {
+    .arrowUp.active {
+        right: 20px;
+        bottom: 20px;
+    }
 }
 
 @import "./cdn";

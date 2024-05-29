@@ -14,14 +14,11 @@
     padding: 25px 0 15px;
     margin: auto;
     align-items: center;
-
-
 }
 
 .easily_img {
     display: flex;
     justify-content: center;
-
 }
 
 .easily_about_card {
@@ -50,7 +47,6 @@
 
     .easily_item {
         width: 300px;
-
     }
     .easily_about_card {
         font-size: 18px;
@@ -59,12 +55,10 @@
         font-size: 14px;
         width: 300px;
     }
-
 }
 
 @media (max-width: 575px) {
     .easily_list {
         padding: 25px 0 35px 0;
     }
-
 }

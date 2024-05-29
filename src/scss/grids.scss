@@ -26,14 +26,11 @@
 }
 
 .grid_header {
-
     @include grid_header;
     display: none;
-
     .grid_h4 {
         @include grid_h4;
     }
-
     .grid_h5 {
         @include grid_h5;
     }

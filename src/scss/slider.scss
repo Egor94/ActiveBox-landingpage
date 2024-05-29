@@ -90,18 +90,15 @@
 
 @media (max-width: 575px) {
     .slider_img {
-        width: 100%;}
-
+        width: 100%;
+    }
         .slider_text {
             display: flex;
             width: 100%;
             padding: 60PX 0 70px;
             margin: auto;
             flex-direction: column;
-
-
 }
-
     .slider_item {
 height: 100%;        
     }
@@ -115,11 +112,10 @@ height: 100%;
         min-width: 300px;
         justify-content: center;
     }
-    .carousel-indicators {
-        
+    .carousel-indicators {    
     .slider_button {
         height: 10px;
-        width: 10px;}
+        width: 10px;
     }
-
+    }
 }

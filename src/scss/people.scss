@@ -23,12 +23,10 @@
 }
 .people_img img{
     @include std_img;
-
 }
 
 h3 {
     @include h3;
-
 }
 
 .people_position {
@@ -44,12 +42,10 @@ h3 {
 .people_social {
     display: flex;
     margin-top: 38px;
-
 }
+
 .people_social_a{
     margin-right: 5px;
-  
-
 }
 
 .people_social_icon:hover {
@@ -70,34 +66,27 @@ h3 {
     .people_img {
         width: 227px;
         height: 227px;
-       overflow: hidden;
-       
+       overflow: hidden;     
     }
     .people_img img {
-
-        @include std_img;
-           
+        @include std_img;          
     }
     h3 {
         font-size: 24px;
     }
-
     .people_position {
         font-size: 14px;
     }
     .people_description {
         font-size: 14px;
     }
-
     .people_social_a{
         width: 32px;
         height: 32px;
         overflow: hidden;
     }
-
     .people_social_icon{
         @include std_img;
-
     }
 }
 
@@ -113,27 +102,19 @@ h3 {
     .people_img {
         width: 280px;
         height: 280px;
-       overflow: hidden;
-       
+       overflow: hidden;       
     }
     .people_img img {
 
         @include std_img;
            
     }
-
-
     .people_social_a{
         width: 40px;
         height: 40px;
         overflow: hidden;
     }
-
     .people_social_icon{
         @include std_img;
-
     }
-
-
-
 }

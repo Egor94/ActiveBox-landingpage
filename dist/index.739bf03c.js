@@ -575,11 +575,28 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"ebWYT":[function(require,module,exports) {
 var _bootstrap = require("bootstrap");
+document.addEventListener("DOMContentLoaded", function() {
+    const headerLinks = document.querySelectorAll(".header_link");
+    headerLinks.forEach((item)=>{
+        item.addEventListener("click", function() {
+            document.querySelector("header").classList.remove("open");
+        });
+        document.getElementById("burger").addEventListener("click", function() {
+            document.querySelector("header").classList.toggle("open");
+        });
+    });
+});
+document.addEventListener("scroll", function() {
+    let scrollSize = document.documentElement.scrollTop;
+    const upBotton = document.getElementById("arrowUp");
+    if (scrollSize > 300) upBotton.classList.add("active");
+    else upBotton.classList.remove("active");
+});
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 /*!
-  * Bootstrap v5.3.1 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Bootstrap v5.3.3 (https://getbootstrap.com/)
+  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -1115,7 +1132,7 @@ const Manipulator = {
  * --------------------------------------------------------------------------
  */ /**
  * Constants
- */ const VERSION = "5.3.1";
+ */ const VERSION = "5.3.3";
 /**
  * Class definition
  */ class BaseComponent extends Config {
@@ -1180,7 +1197,7 @@ const Manipulator = {
         if (hrefAttribute.includes("#") && !hrefAttribute.startsWith("#")) hrefAttribute = `#${hrefAttribute.split("#")[1]}`;
         selector = hrefAttribute && hrefAttribute !== "#" ? hrefAttribute.trim() : null;
     }
-    return parseSelector(selector);
+    return selector ? selector.split(",").map((sel)=>parseSelector(sel)).join(",") : null;
 };
 const SelectorEngine = {
     find (selector, element = document.documentElement) {
@@ -2933,7 +2950,10 @@ const DefaultAllowlist = {
     br: [],
     col: [],
     code: [],
+    dd: [],
     div: [],
+    dl: [],
+    dt: [],
     em: [],
     hr: [],
     h1: [],
@@ -3861,7 +3881,7 @@ const CLASS_NAME_SHOW$1 = "show";
 const CLASS_DROPDOWN = "dropdown";
 const SELECTOR_DROPDOWN_TOGGLE = ".dropdown-toggle";
 const SELECTOR_DROPDOWN_MENU = ".dropdown-menu";
-const NOT_SELECTOR_DROPDOWN_TOGGLE = ":not(.dropdown-toggle)";
+const NOT_SELECTOR_DROPDOWN_TOGGLE = `:not(${SELECTOR_DROPDOWN_TOGGLE})`;
 const SELECTOR_TAB_PANEL = '.list-group, .nav, [role="tablist"]';
 const SELECTOR_OUTER = ".nav-item, .list-group-item";
 const SELECTOR_INNER = `.nav-link${NOT_SELECTOR_DROPDOWN_TOGGLE}, .list-group-item${NOT_SELECTOR_DROPDOWN_TOGGLE}, [role="tab"]${NOT_SELECTOR_DROPDOWN_TOGGLE}`;
