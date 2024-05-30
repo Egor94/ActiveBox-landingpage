@@ -40,10 +40,16 @@
 }
 
 @media (max-width: 1024px) {
+    .location_info {
+        justify-content: space-around;
+    }
+    
     .location_items {
         max-width: 315px;
     }
-
+    .location_nav {
+        padding-top: 15px;
+    }
     .location_headers {
         font-size: 14px;
     }
